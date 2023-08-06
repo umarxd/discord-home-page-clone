@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+}
+
+body {
+  background-color: 313338;
+}
+
+.servers-section {
+  background-color: #1e1f22;
+  width: 72px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  .servers-section-item {
+    margin-block: 6px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    .server-notification-bar {
+      position: absolute;
+      left: -4;
+      background-color: white;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .discord-logo {
+    background-color: #5865f2;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      height: 40px !important;
+      border-radius: 16px !important;
+    }
+    svg {
+      color: white;
+    }
+  }
+  .server-logo {
+    background-color: lightblue;
+    border-radius: 50%;
+    &:hover {
+      transition: 0.3s;
+      border-radius: 16px;
+      .server-notification-bar {
+        transition: 0.3s;
+        height: 20px;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .misc-server-button {
+    background-color: #313338;
+    &:hover {
+      background-color: #23a559;
+      svg {
+        color: white;
+      }
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      color: #23a559;
+    }
+  }
+}
