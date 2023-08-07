@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8px;
 }
 .servers-section .servers-section-item {
   margin-block: 6px;
@@ -52,7 +51,7 @@ body {
   color: white;
 }
 .servers-section .server-logo {
-  background-color: lightblue;
+  background-color: rgb(36, 74, 165);
   border-radius: 50%;
 }
 .servers-section .server-logo:hover {
@@ -82,7 +81,6 @@ body {
 
 .friends-section {
   width: 240px;
-  height: 100%;
   background-color: #2b2d31;
   display: flex;
   flex-direction: column;
@@ -177,4 +175,39 @@ body {
   margin-left: 100px;
   color: rgba(255, 255, 255, 0.7);
   display: none;
+}
+.friends-section .user-info {
+  width: 216px;
+  height: 52px;
+  padding-inline: 12px;
+  background-color: #232428;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.friends-section .user-info .pfp {
+  width: 32px;
+  height: 32px;
+  background-color: rgb(36, 74, 165);
+  border-radius: 50%;
+}
+.friends-section .user-info .status-container {
+  padding-left: 8px;
+}
+.friends-section .user-info .username {
+  color: #f2f3f5;
+  font-size: 12px;
+}
+.friends-section .user-info .status {
+  color: rgba(242, 243, 245, 0.4);
+  font-size: 10px;
+}
+.friends-section .user-info .controllers {
+  color: #b5bac1;
+  display: flex;
+  margin-left: 30px;
+}
+.friends-section .user-info .controllers .headphones {
+  margin-inline: 10px;
 }/*# sourceMappingURL=styles.css.map */
